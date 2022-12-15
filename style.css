@@ -1,5 +1,6 @@
 html {
-    height: 100vh;
+    height: 100vh; /* In case dvh unit is not supported*/
+    height: 100dvh;
     display: flex;
     align-items: stretch;
     background: linear-gradient(
@@ -26,12 +27,12 @@ html {
 }
 
 body {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    flex-grow: 1;
+    gap: 3em;
 }
 
 h1 {
@@ -43,15 +44,26 @@ h1 {
 
 p {
     text-align: center;
+    font-size: 3em;
     color: white;
-    font-size: 2em;
+    margin: 0;
 }
 
 i {
-    font-size: 5em;
+    font-size: 4em;
     color: white;
 }
 
 a {
     text-decoration: none;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    list-style-type: none;
+    padding: 0;
 }
