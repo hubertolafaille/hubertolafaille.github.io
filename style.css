@@ -1,5 +1,4 @@
 html {
-    height: 100vh; /* In case dvh unit is not supported*/
     height: 100dvh;
     display: flex;
     align-items: stretch;
@@ -47,15 +46,6 @@ p {
     font-size: 3em;
     color: white;
     margin: 0;
-}
-
-i {
-    font-size: 4em;
-    color: white;
-}
-
-a {
-    text-decoration: none;
 }
 
 ul {
